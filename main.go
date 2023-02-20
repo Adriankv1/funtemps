@@ -65,14 +65,10 @@ func main() {
 			}
 		}
 
-		if result == 0 {
-			fmt.Println("Invalid input. Please check your source and target temperature scales.")
+		if result == float64(int(result)) {
+			fmt.Printf("%g degrees %s is %g degrees %s\n", temp, from, result, to)
 		} else {
-			if result == float64(int(result)) {
-				fmt.Printf("%.0g degrees %s is %g degrees %s\n", temp, from, result, to)
-			} else {
-				fmt.Printf("%.3g degrees %s is %g degrees %s\n", temp, from, result, to)
-			}
+			fmt.Printf("%.3g degrees %s is %g degrees %s\n", temp, from, result, to)
 		}
 	}
 }
