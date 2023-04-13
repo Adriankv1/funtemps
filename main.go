@@ -3,8 +3,8 @@ package main
 import (
 	"flag"
 	"fmt"
-	"funtemps/v2/conv"
-	"funtemps/v2/funfacts"
+	"github.com/Adriankv1/funtemps/conv"
+	"github.com/Adriankv1/funtemps/funfacts"
 	"os"
 	"strings"
 )
